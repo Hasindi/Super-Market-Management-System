@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="635.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1022.0" layoutY="-7.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../accert/beautiful-family-standing-cash-counter.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.37" contrast="-0.18" />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="1.0" layoutY="117.0" prefHeight="434.0" prefWidth="1010.0">
+         <children>
+            <JFXButton layoutX="155.0" layoutY="183.0" onAction="#backOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #B67566;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="47.0" layoutY="98.0" prefHeight="50.0" prefWidth="332.0" text="Sign in and discover great amount" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="49.0" text="One of us?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="123.0" prefHeight="50.0" prefWidth="209.0" text="of new opportunities!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserName" layoutX="665.0" layoutY="137.0" prefHeight="31.0" prefWidth="232.0" promptText="User Name" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnLogIn" layoutX="692.0" layoutY="273.0" onAction="#signInOnAction" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #B67566;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="723.0" layoutY="70.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="713.0" layoutY="318.0" prefHeight="21.0" prefWidth="118.0" text="Forget Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="710.0" layoutY="337.0" prefHeight="0.0" prefWidth="118.0" style="-fx-background-color: white;" />
+            <JFXPasswordField fx:id="pwdPassword" layoutX="665.0" layoutY="196.0" onKeyReleased="#TextFieldsReleased" prefHeight="38.0" prefWidth="232.0" promptText="Password" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="616.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../accert/admin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="619.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../accert/padlocks.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

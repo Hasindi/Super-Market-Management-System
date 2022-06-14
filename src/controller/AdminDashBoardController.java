@@ -7,6 +7,7 @@ import bo.custom.PlaceOrderBO;
 import bo.custom.impl.CustomerBOImpl;
 import bo.custom.impl.ItemBOImpl;
 import bo.custom.impl.PlaceOrderBOImpl;
+import dao.SQLUtil;
 import entity.ItemQTYRates;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -28,6 +29,7 @@ import util.AddWindowUi;
 import util.CloseWindowUi;
 
 import java.io.IOException;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -138,6 +140,14 @@ public class AdminDashBoardController implements AddWindowUi, CloseWindowUi {
     }
 
     public void  calculateIncome(){
+        /*try{
+            ResultSet result = SQLUtil.executeUpdate("SELECT SUM(Price) FROM `OrderDetail`");
+            result.next();
+            String s = String.valueOf(result.getDouble(1));
+            lblTotalIncome.setText(s);
+        }catch(ClassNotFoundException | SQLException e){
+            e.printStackTrace();
+        }*/
     }
 
     @Override

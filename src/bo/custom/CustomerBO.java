@@ -22,4 +22,5 @@ public interface CustomerBO extends SuperBO {
     String loadCustomerCount() throws SQLException, ClassNotFoundException;
 
     ArrayList<CustomerDTO> searchCustomers(String enteredText) throws SQLException, ClassNotFoundException;
+
 }
